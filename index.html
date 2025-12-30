@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Special Surprise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <section class="screen active" id="welcome">
+            <div class="glass-card">
+                <h1 class="glow-text">2026</h1>
+                <p>Ek chota sa tohfa meri sabse achi dost ke liye...</p>
+                <button onclick="nextScreen('memories')">Open Memories ✨</button>
+            </div>
+        </section>
+
+        <section class="screen" id="memories">
+            <div class="glass-card">
+                <h2>Our Best Moments 📸</h2>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="img1.jpg" class="slide">
+                        <img src="img2.jpg" class="slide">
+                        <img src="img3.jpg" class="slide">
+                        <img src="img4.jpg" class="slide">
+                        <img src="img5.jpg" class="slide">
+                        <img src="img6.jpg" class="slide">
+                        <img src="img7.jpg" class="slide">
+                        <img src="img8.jpg" class="slide">
+                        <img src="img9.jpg" class="slide">
+                        <img src="img10.jpg" class="slide">
+                    </div>
+                </div>
+                <button onclick="nextScreen('music')">Listen This 🎵</button>
+            </div>
+        </section>
+
+        <section class="screen" id="music">
+            <div class="glass-card">
+                <h2>Dedicated to You</h2>
+                <div class="music-box">
+                    <p>Hamari dosti ke naam 🎶</p>
+                    <audio id="bgMusic" controls>
+                        <source src="song.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <button onclick="finish()">Final Note 🎁</button>
+            </div>
+        </section>
+
+        <section class="screen" id="final">
+            <div class="glass-card">
+                <h1 class="glow-text">Happy New Year!</h1>
+                <div class="special-message">
+                    <p>"2025 mere liye bahut khaas raha, kyunki is saal mujhe tum jaisi sabse behtareen aur sachi dost mili. Tum sirf meri dost nahi, meri sabse badi support system ho. Thank you for being part of my 2025! ❤️"</p>
+                </div>
+                <button onclick="location.reload()">Restart 🔄</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
